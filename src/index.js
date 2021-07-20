@@ -1,6 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM, { unstable_renderSubtreeIntoContainer } from "react-dom";
 import App from "./components/App";
 import "./index.css";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const NewHeader = <h1>now</h1>
+
+ReactDOM.render(<App />, 
+    document.getElementById("root"));
+
